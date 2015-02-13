@@ -37,6 +37,7 @@
     "body-parser": "^1.11.0",
     "ejs": "^2.2.4",
     "express": "^4.11.2",
+    "grunt-mocha-phantom-istanbul": "^0.1.1",
     "phantomjs": "^1.9.15",
     "phaser": "^2.2.2"
   }

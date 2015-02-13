@@ -3,10 +3,10 @@ module.exports = function(grunt) {
 grunt.initConfig({
    pkg: grunt.file.readJSON('package.json'),
    mocha_casperjs: {
-     options: {},
      files: {
        src: ['test/**/*.js']
-     }
+     },
+     options: {}
    },
    express: {
       test: {
@@ -19,6 +19,7 @@ grunt.initConfig({
 
  grunt.loadNpmTasks('grunt-mocha-casperjs');
  grunt.loadNpmTasks('grunt-express-server');
+ grunt.loadNpmTasks('grunt-mocha-phantom-istanbul')
  grunt.registerTask('default', ['express:test', 'mocha_casperjs', 'express:test:stop']);
 
 };
