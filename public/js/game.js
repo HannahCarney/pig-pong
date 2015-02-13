@@ -1,6 +1,6 @@
 var Phaser;
 
-var game = new Phaser.Game(1000, 500, Phaser.AUTO, 'game-mainpage', { preload: preload, create: create, update: update, render: render });
+var game = new Phaser.Game(700, 400, Phaser.AUTO, 'game-mainpage', { preload: preload, create: create, update: update, render: render });
 
 // Initializing game =======================================================================
 
@@ -18,11 +18,10 @@ var character;
 var ball;
 var cursors;
 var timer;
-var ex_sound;
-var highscore = 0;
-
 var playerScore;
 var dead = false;
+var ex_sound;
+var highscore = 0;
 
 function create() {
 
@@ -81,19 +80,11 @@ function render() {
 function createPlayer() {
 
   character = game.add.sprite(game.rnd.integerInRange(100, 770), game.rnd.integerInRange(0, 570), 'farmer');
-
   character.scale.setTo(0.08, 0.08);
   character.anchor.setTo(0.5, 0.5);
   game.physics.enable(character, Phaser.Physics.ARCADE);
   character.body.collideWorldBounds = true;
   character.body.bounce.set(0.3);
-
-}
-
-function audio() {
-
-  ex_sound = game.add.audio('ex_sound');
-  ex_sound.play();
 
 }
 
@@ -112,7 +103,8 @@ function createBall() {
 
 function destroySprite() {
 
-  character.kill();
+  character.kill();  
+
   ball.destroy();
 
   //explosion
@@ -120,7 +112,6 @@ function destroySprite() {
   var explosionAnimation = explosion.getFirstExists(false);
   explosionAnimation.reset(character.x, character.y);
   explosionAnimation.play('explosion', 30, false, true);
-  audio();
 
   //highscore
 
@@ -132,9 +123,11 @@ function destroySprite() {
 }
 
 function getScore(playerScore) {
-  console.log(playerScore);
-  deathLol(playerScore);
+
+  console.log(playerScore)
+  deathLol(playerScore)
   group.destroy()
   game.time.reset();
   create();
+
 }
