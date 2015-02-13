@@ -40,7 +40,12 @@ describe('Homepage', function() {
 
 	it('should display a logo', function() {
 		casper.thenOpen(host + '/', function() {
-			expect('canvas').to.be.inDOM;
+			casper.then(function() {
+			  this.evaluate(function() {
+			    document.getElementById('#submit').click();
+				});
+			});
+			expect('#score').to.be.inDOM;
 		});
 	});
 
