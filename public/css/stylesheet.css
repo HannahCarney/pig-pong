@@ -28,11 +28,10 @@ body {
    z-index: -5;
 }
 
-
-
 #game-mainpage {
   margin: 0 0 auto;
   display: inline-block;
+  border-style:ridge;
 }
 
 .style-2 input[type="text"] {
@@ -55,7 +54,7 @@ body {
 }
 
 h3 .name{
-  float: rightL
+  float: right
 }
 
 h3 .highscore {
