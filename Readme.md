@@ -1,29 +1,56 @@
-![Alt text](public/image/logo.png "Optional title")
- 
- [![Code Climate](https://codeclimate.com/github/ciawalsh/Pig-Pong/badges/gpa.svg)](https://codeclimate.com/github/ciawalsh/Pig-Pong) [![Test Coverage](https://codeclimate.com/github/matteomanzo/PigPong/badges/coverage.svg)](https://codeclimate.com/github/matteomanzo/PigPong)
-=============================================================
+Pig Pong
+=======================
 
+## Synopsis
 
-Heroku (live)
- ------
- [Pig-Pong]: https://zombie-pig-pong.herokuapp.com/
- 
- [Pig-Pong]
- 
- Technologies used
- ----------
-  * Javascript
-  * JQuery
-  * Node
-  * Casper
-  * Html
-  * CSS
-  * Sublime Text
-  * Git
-  * Heroku
+This is a project for the Makerthon week (week 8 at Makers Academy).
+We decided to build a realtime game, where you are a farmer and you have to avoid the zombie pigs bouncing around.
 
-How to clone this repo
- ----
-  ```sh
-git clone https://github.com/IndiaDearlove/pig-pong.git
- ```
+![NAME_OF_IMAGE](public/image/logo_screenshot.png)
+
+## Technologies Used
+
+- JavaScript
+- HTML & CSS
+- NodeJS
+- Phaser
+- Mocha, Chai and CasperJS
+
+## Job List
+
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+
+## Favourite Code Snippet
+
+~~~
+var game = new Phaser.Game(700, 400, Phaser.AUTO, 'game-mainpage', { preload: preload, create: create, update: update, render: render });
+
+game.physics.startSystem(Phaser.Physics.ARCADE);
+
+group = game.add.group();
+group.enableBody = true;  
+group.physicsBodyType = Phaser.Physics.ARCADE;
+game.time.events.loop(5000, createBall, this);
+~~~
+This is the part of code where we initialise the game and define how big our canvas will be.
+Choose what physics to use and enable the body of the object to collide with other objects.
+
+## Collaborators
+
+- Charlie Walsh (http://www.github.com/ciawalsh)
+- Hannah Carney (http://www.github.com/hannahcarney)
+- Jack Rubio (http://www.github.com/jackrubio26)
+- India Dearlove (http://www.github.com/indiadearlove)
+- Matteo Manzo (http://www.github.com/matteomanzo)
+
+## Still to complete/refactor
+
+- [ ] Web Sockets for multiplayer game
+- [ ] Character can shoot
+
+## Takeaway
+
+Being able to understand and use new technologies like Phaser, and spent a lot of time designing how to implement the app before we wrote a line of code.
