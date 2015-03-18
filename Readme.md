@@ -12,10 +12,17 @@ We decided to build a realtime game, where you are a farmer and you have to avoi
 
 ## Technologies Used
 
+###Front-end
 - JavaScript
 - HTML & CSS
+
+###Server
 - NodeJS
+
+###Physics
 - Phaser
+
+###Testing
 - Mocha, Chai and CasperJS
 
 ## Job List
@@ -51,6 +58,7 @@ Choose what physics to use and enable the body of the object to collide with oth
 
 - [ ] Web Sockets for multiplayer game
 - [ ] Character can shoot
+- [ ] Game tests
 
 ## Takeaway
 
