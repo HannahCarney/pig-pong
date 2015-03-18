@@ -18,10 +18,9 @@ We decided to build a realtime game, where you are a farmer and you have to avoi
 
 ## Job List
 
-- [ ]
-- [ ]
-- [ ]
-- [ ]
+- [x] Character can be hit by the ball
+- [x] Multiple balls gets generated after a certain amount of time
+- [x] Can register the Highscore
 
 ## Favourite Code Snippet
 
@@ -40,10 +39,10 @@ Choose what physics to use and enable the body of the object to collide with oth
 
 ## Collaborators
 
-- Charlie Walsh (http://www.github.com/ciawalsh)
-- Hannah Carney (http://www.github.com/hannahcarney)
 - Jack Rubio (http://www.github.com/jackrubio26)
 - India Dearlove (http://www.github.com/indiadearlove)
+- Hannah Carney (http://www.github.com/hannahcarney)
+- Charlie Walsh (http://www.github.com/ciawalsh)
 - Matteo Manzo (http://www.github.com/matteomanzo)
 
 ## Still to complete/refactor
@@ -53,4 +52,4 @@ Choose what physics to use and enable the body of the object to collide with oth
 
 ## Takeaway
 
-Being able to understand and use new technologies like Phaser, and spent a lot of time designing how to implement the app before we wrote a line of code.
+Being able to understand and use new technologies like Phaser, and spent a lot of time designing how to implement the app before we wrote a single line of code.
