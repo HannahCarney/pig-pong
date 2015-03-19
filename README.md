@@ -3,6 +3,8 @@
 Pig Pong
 =======================
 
+[Play it!](zombie-pig-pong.herokuapp.com)
+
 ## Synopsis
 
 This is a project for the Makerthon week (week 8 at Makers Academy).
