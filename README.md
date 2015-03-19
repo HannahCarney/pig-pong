@@ -23,7 +23,9 @@ We decided to build a realtime game, where you are a farmer and you have to avoi
 - Phaser
 
 ###Testing
-- Mocha, Chai and CasperJS
+- Mocha
+- Chai
+- CasperJS
 
 ## Job List
 
