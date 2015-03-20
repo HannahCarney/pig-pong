@@ -20,7 +20,7 @@ We decided to build a realtime game, where you are a farmer and you have to avoi
 |             | HTML & CSS        |             |CasperJS  |
 
 ##How to run it
-Clone the repository and change into the directory:
+Clone the repository
 ```
 SSH:
 $ git clone git@github.com:matteomanzo/PigPong.git
