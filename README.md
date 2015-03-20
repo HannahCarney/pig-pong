@@ -11,22 +11,13 @@ We decided to build a realtime game, where you are a farmer and you have to avoi
 
 ![NAME_OF_IMAGE](public/image/logo_screenshot.png)
 
-## Technologies Used
+## Technologies
 
-###Front-end
-- JavaScript
-- HTML & CSS
-
-###Server
-- NodeJS
-
-###Physics
-- Phaser
-
-###Testing
-- Mocha
-- Chai
-- CasperJS
+| Languages   | Frameworks  | Testing  |
+| ------------|-------------| -----|
+| JavaScript  | Node        | Mocha |
+| HTML        | Phaser  | PhantomJS |
+| CSS         |    | CasperJS  |
 
 ## Job List
 
