@@ -13,11 +13,11 @@ We decided to build a realtime game, where you are a farmer and you have to avoi
 
 ## Technologies
 
-| Languages   | Frameworks  | Testing  |
-| ------------|-------------| -----|
-| JavaScript  | Node        | Mocha |
-| HTML        | Phaser  | PhantomJS |
-| CSS         |    | CasperJS  |
+| Languages   |Front End| Server  | Testing  |
+| ------------|-------- |------------| -----|
+| JavaScript  | jQuery  | NodeJS      | Mocha |
+|             | Phaser  |         | PhantomJS |
+|             | HTML & CSS        |             |CasperJS  |
 
 ## Job List
 
