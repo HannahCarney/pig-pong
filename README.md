@@ -19,6 +19,28 @@ We decided to build a realtime game, where you are a farmer and you have to avoi
 |             | Phaser  |         | PhantomJS |
 |             | HTML & CSS        |             |CasperJS  |
 
+##How to run it
+Clone the repository and change into the directory:
+```
+SSH:
+$ git clone git@github.com:matteomanzo/PigPong.git
+HTTPS:
+$ git clone https://github.com/matteomanzo/PigPong.git
+```
+Change directory
+```
+$ cd PigPong
+```
+Install the dependencies listed in the package.json 
+```
+$ npm install
+```
+Run the tests
+```
+$ grunt
+```
+Run it locally using `node server.js`, then visit `http://localhost:9999`
+
 ## Job List
 
 - [x] Character can be hit by the ball
