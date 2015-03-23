@@ -76,6 +76,6 @@ Choose what physics to use and enable the body of the object to collide with oth
 - [ ] Character can shoot
 - [ ] Game tests
 
-## Takeaway
+## Thoughts on this project
 
-Being able to understand and use new technologies like Phaser, and spent a lot of time designing how to implement the app before we wrote a single line of code.
+Being able to understand and use new technologies like Phaser, and spent a lot of time designing how to implement the app before we wrote a single line of code. Testing the game feature though, it has been very hard. Our code is covered for the 35% and that is because we are still working testing the game feature and characters interaction.
