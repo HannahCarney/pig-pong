@@ -8,7 +8,7 @@ For Makerthon we built a real-time game. You are a farmer! Escape the Zombie Pig
 Heroku (live)
 ------
 [pig pong]: https://zombie-pig-pong.herokuapp.com/
-[girl version]
+[pig pong]
 
 Objectives of exercise
 -----
