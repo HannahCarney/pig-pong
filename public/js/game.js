@@ -38,7 +38,7 @@ function create() {
   createPlayer();
 
   cursors = game.input.keyboard.createCursorKeys();
-  timer = game.time.create(true);
+  timer =   game.time.create(true);
   timer.start();
 
   explosion = game.add.group();

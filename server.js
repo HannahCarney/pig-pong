@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 var server = require('http').createServer(app);
 
 app.set('view engine', 'ejs');
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname));
 app.use(bodyParser.urlencoded({'extended':'true'}));
 app.use(bodyParser.json());
 
