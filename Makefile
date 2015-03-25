@@ -1,26 +1,21 @@
-MOCHA_REPORTER = spec
-UNIT_TESTS = $(shell find test/app -name "*.test.js")
+#!/bin/bash
+MOCHA=node_modules/.bin/mocha
+ISTANBUL=node_modules/.bin/istanbul
+COVERALLS=node_modules/coveralls/bin/coveralls.js
+CUCUMBER=node_modules/.bin/cucumber.js
+REPORTER = spec
+# test files must start with "test*.js"
+TESTS=$(shell find test/ -name "*.feature")
+
+
+
+coverage:
+  # check if reports folder exists, if not create it
+	@NODE_ENV=cucumber $(ISTAMBUL) cover $(CUCUMBER)  && cat ./coverage/lcov.info | $(COVERALLS) && rm -rf ./coverage
 
 # vim => :map ,f :w\|!clear && make cucumber<cr>
 cucumber:
-	@NODE_ENV=test node_modules/.bin/cucumber-js test \
-		-r test/step_definitions
-
-test-performance:
-
-# vim => :map ,t :w\|!clear && make spec<cr>
-spec:
-	@NODE_ENV=test ./node_modules/.bin/mocha \
-		--require should \
-		--require sinon \
-		--globals prop \
-		--reporter $(MOCHA_REPORTER) \
-		--slow 50 \
-		--growl \
-		$(UNIT_TESTS)
-
-# vim => :map ,c :w\|!clear && make spec-client<cr>
-spec-client:
-	open test/client/SpecRunner.html
+	@NODE_ENV=test node_modules/.bin/cucumber-js features \
+		-r features/step_definitions
 
 all: cucumber test-performance spec spec-client

@@ -1,9 +1,8 @@
-
 var userStepsWrapper = function () {
   var assert = require('assert');
   this.World = require("../support/world.js").World;
 
-  this.Given(/^I am on the homepage$/, function(callback) {
+  this.Given(/^I am on the homepage$/, function (callback) {
     this.browser.visit('http://localhost:9999/', callback);
   });
 
@@ -17,13 +16,19 @@ var userStepsWrapper = function () {
     callback();
   });  
 
-  this.When(/^I can enter my name$/, function (callback) {
+  this.When(/^I enter my name$/, function (callback) {
     this.browser.fill('username', 'John');
-    this.browser.pressButton('submit').then(function() {
-       console.log("The page:", this.browser.html())
-       assert.ok(this.browser.success);
-       assert.equal(this.browser.text("title"), "Plaay-Pig-Pong");
-    })
+    callback();
+  });
+
+  this.When(/^I hit enter$/, function (callback) {
+    this.browser.pressButton('submit', function() {
+    callback();
+    });
+  });
+
+  this.Then(/^I should see "(.*)" on the page$/, function (image, callback){
+    assert.ok(this.browser.query("#" + image));
     callback();
   });
 };
