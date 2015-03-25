@@ -14,9 +14,11 @@ function deathLol(playerScore) {
           }    
 
       } 
-      function audio() {
 
-          ex_sound = game.add.audio('ex_sound');
-          ex_sound.play();
+function audio() {
 
-        }
+  ex_sound = game.add.audio('ex_sound');
+  ex_sound.play();
+
+}
+

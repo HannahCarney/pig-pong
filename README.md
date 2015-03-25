@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ![image](https://github.com/ciawalsh/Pig-Pong/blob/master/public/image/logo.png?raw=true)
 =============================================================
 [![Code Climate](https://codeclimate.com/github/ciawalsh/Pig-Pong/badges/gpa.svg)](https://codeclimate.com/github/ciawalsh/Pig-Pong) [![Test Coverage](https://codeclimate.com/github/matteomanzo/PigPong/badges/coverage.svg)](https://codeclimate.com/github/matteomanzo/PigPong)
@@ -23,18 +24,21 @@ Technologies used
 * Javascript
 * JQuery
 * Node
-* Html
+* HTML
 * CSS
 * Git
 * Heroku
-* Jasmine
-* websockets
+* Cucumber
+* Mocha
+* Zombie
+* Phaser
+* Websockets
 
 Requirements
 - [x] Create a Homepage with Name Entry
 - [x] Create a Game Canvas with a user and an interaction with some sort of object.
 - [x] User Friendly Experience
-- [ ] Impliment Two Player Mode
+- [ ] Impliment Two Player Modes
 
 How to clone this repo
 ----
@@ -42,11 +46,17 @@ How to clone this repo
 git clone https://github.com/HannahCarney/pig-pong.git
 ```
 
+Install Dependencies
+----
+```sh
+npm install
+```
+
 How to run tests
 ----
 ```sh
 cd pig-pong
-npm test
+make all
 ```
 
 How to run locally
@@ -56,7 +66,7 @@ How to run locally
 node server.js
 ```
 
-Visit http://localhost:3001/
+Visit http://localhost:9999/
 
 Contributors
 ----
