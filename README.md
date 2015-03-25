@@ -1,7 +1,6 @@
-<<<<<<< HEAD
 ![image](https://github.com/ciawalsh/Pig-Pong/blob/master/public/image/logo.png?raw=true)
 =============================================================
-[![Code Climate](https://codeclimate.com/github/ciawalsh/Pig-Pong/badges/gpa.svg)](https://codeclimate.com/github/ciawalsh/Pig-Pong) [![Test Coverage](https://codeclimate.com/github/matteomanzo/PigPong/badges/coverage.svg)](https://codeclimate.com/github/matteomanzo/PigPong)
+[![Code Climate](https://codeclimate.com/github/HannahCarney/pig-pong/badges/gpa.svg)](https://codeclimate.com/github/HannahCarney/pig-pong)  [![Test Coverage](https://codeclimate.com/github/HannahCarney/pig-pong/badges/coverage.svg)](https://codeclimate.com/github/HannahCarney/pig-pong)
 =============================================================
 
 For Makerthon we built a real-time game. You are a farmer! Escape the Zombie Pigs!
